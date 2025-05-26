@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
@@ -502,6 +501,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full blur opacity-60"></div>
               <div className="relative w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full p-0.5">
                 {siteContent.personal.profileImage ? (
+                   // eslint-disable-next-line @next/next/no-img-element
                   <img 
                     src={siteContent.personal.profileImage}
                     alt={siteContent.personal.name}
@@ -594,6 +594,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-cyan-400 to-teal-400 rounded-full blur-lg opacity-60 animate-pulse"></div>
                   <div className="relative w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full p-1">
                     {siteContent.personal.profileImage ? (
+                       // eslint-disable-next-line @next/next/no-img-element
                       <img 
                         src={siteContent.personal.profileImage}
                         alt={siteContent.personal.name}
@@ -762,6 +763,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-cyan-400 to-teal-400 rounded-full blur-lg opacity-60"></div>
                   <div className="relative w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full p-1 overflow-hidden">
                     {siteContent.personal.profileImage ? (
+                      // eslint-disable-next-line @next/next/no-img-element
                       <img 
                         src={siteContent.personal.profileImage}
                         alt={siteContent.personal.name}
