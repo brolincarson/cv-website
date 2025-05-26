@@ -31,14 +31,225 @@ import {
   EyeOff
 } from 'lucide-react';
 
-import { 
-  siteContent, 
-  experience, 
-  education, 
-  certifications, 
-  skillIcons, 
-  navigationItems 
-} from '../data/content.js';
+// Site content data
+const siteContent = {
+  personal: {
+    name: "Stacy Ayako",
+    title: "Quantitative Finance Professional & Risk Management Specialist",
+    email: "ayakostacy@gmail.com",
+    phone: "+48 502 416 510",
+    location: "Poznan, Poland",
+    profileImage: "https://images.unsplash.com/photo-1494790108755-2616b612b048?w=400&h=400&fit=crop&crop=face",
+    bio: "Finance professional with a Master's in Quantitative Finance and comprehensive experience in client servicing, financial operations, and treasury functions. Possesses strong skills in derivatives pricing, CVA computation, and financial analysis, with practical expertise in SAP, Excel, and R. Proven ability to work cross-functionally to improve process efficiency and ensure accuracy in financial reporting. Adept in risk management, treasury processing, and supporting end-to-end finance functions. Currently serving as Team Lead at FIS Global, overseeing daily operations and managing complex client accounts while ensuring regulatory compliance. My expertise spans from Monte Carlo simulations and GARCH modeling to practical treasury operations and client relationship management. I bridge theoretical quantitative finance knowledge with real-world financial services applications, delivering measurable results in risk assessment, portfolio management, and operational efficiency.",
+    shortBio: "Finance professional with a Master's in Quantitative Finance and comprehensive experience in client servicing, financial operations, and treasury functions. Currently serving as Team Lead at FIS Global with expertise in derivatives pricing, risk management, and treasury operations.",
+    socialLinks: {
+      github: "https://github.com/stacyayako",
+      linkedin: "https://linkedin.com/in/stacyayako",
+      twitter: "https://twitter.com/stacyayako"
+    }
+  },
+  skills: [
+    "SAP ERP", "Advanced Excel", "R Programming", "SPSS", "Python", "VBA", 
+    "Financial Modeling", "Derivatives Pricing", "CVA Calculations", "Monte Carlo Simulations", 
+    "GARCH Models", "Risk Management", "Treasury Operations", "Financial Reporting", 
+    "Econometrics", "Portfolio Management", "Regulatory Compliance", "Client Relations"
+  ],
+  projects: [
+    {
+      id: 1,
+      title: "Credit Valuation Adjustment (CVA) Analysis",
+      shortDescription: "Comprehensive CVA computation for FX Forwards and Credit Default Swaps.",
+      description: "Developed and implemented Credit Valuation Adjustment models for FX Forwards and Credit Default Swaps, incorporating counterparty credit risk into derivative pricing. Utilized advanced mathematical models and Monte Carlo simulations to assess credit exposure and potential losses.",
+      status: "complete",
+      technologies: ["R", "Monte Carlo", "Financial Modeling", "Risk Management"],
+      github: "https://github.com/stacyayako",
+      needsCollaboration: false
+    },
+    {
+      id: 2,
+      title: "Monte Carlo Options Pricing Model",
+      shortDescription: "Advanced pricing model for lookback options using Monte Carlo simulations.",
+      description: "Built sophisticated Monte Carlo simulation framework for pricing lookback options, incorporating path-dependent features and stochastic volatility models. Developed fair value estimation techniques and sensitivity analysis tools.",
+      status: "complete",
+      technologies: ["R", "Monte Carlo", "Options Pricing", "Statistical Modeling"],
+      github: "https://github.com/stacyayako",
+      needsCollaboration: false
+    },
+    {
+      id: 3,
+      title: "Portfolio Risk Management System",
+      shortDescription: "GARCH-based forecasting models for stock returns and VaR assessment.",
+      description: "Designed and implemented GARCH models for forecasting stock returns and market indices, with comprehensive Value-at-Risk (VaR) assessment capabilities. Integrated real-time risk monitoring and stress testing scenarios.",
+      status: "complete", 
+      technologies: ["R", "GARCH Models", "VaR", "Risk Analytics"],
+      github: "https://github.com/stacyayako",
+      needsCollaboration: false
+    },
+    {
+      id: 4,
+      title: "Liquidity Risk Management Framework",
+      shortDescription: "Advanced liquidity scenario modeling and stress testing for derivative portfolios.",
+      description: "Developed comprehensive liquidity risk management system evaluating funding needs under stress conditions for derivative portfolios. Implemented scenario analysis and stress testing frameworks using financial data simulations.",
+      status: "complete",
+      technologies: ["Financial Modeling", "Stress Testing", "Risk Management", "Derivatives"],
+      github: "https://github.com/stacyayako",
+      needsCollaboration: false
+    },
+    {
+      id: 5,
+      title: "Treasury Operations Optimization",
+      shortDescription: "Streamlined treasury payment flows and reconciliation processes at FIS Global.",
+      description: "Led optimization initiatives for treasury payment flows across multiple portfolios, implementing automated reconciliation processes and enhancing data accuracy protocols. Improved operational efficiency and reduced processing time by 30%.",
+      status: "complete",
+      technologies: ["SAP ERP", "Treasury Management", "Process Optimization", "Financial Operations"],
+      github: "https://github.com/stacyayako",
+      needsCollaboration: false
+    },
+    {
+      id: 6,
+      title: "Regulatory Compliance Dashboard",
+      shortDescription: "Comprehensive compliance monitoring system for financial services operations.",
+      description: "Developed regulatory compliance monitoring dashboard for tracking adherence to financial services regulations, automated risk control assessments, and real-time compliance reporting for complex client accounts.",
+      status: "ongoing",
+      technologies: ["Excel", "Financial Reporting", "Compliance", "Risk Controls"],
+      github: "https://github.com/stacyayako",
+      needsCollaboration: false
+    }
+  ]
+};
+
+const experience = [
+  {
+    title: "Senior Financial Services Account Associate",
+    company: "FIS Global",
+    period: "January 2025 - Present",
+    location: "Poznan, Poland",
+    shortSummary: "Team Lead overseeing daily operations, client account management, and regulatory compliance.",
+    achievements: [
+      "Serve as Team Lead, overseeing daily operations, coordinating team efforts, and supporting performance management",
+      "Manage complex client accounts and financial transactions, ensuring adherence to regulatory compliance and internal risk controls",
+      "Lead onboarding and training initiatives for new hires, enhancing team productivity and integration",
+      "Handle escalated client queries, ensuring timely resolution and high customer satisfaction through effective communication",
+      "Drive operational efficiency by participating in cross-functional projects aimed at streamlining service delivery and back-office workflows"
+    ],
+    technologies: ["SAP ERP", "Financial Operations", "Risk Management", "Client Relations"]
+  },
+  {
+    title: "Financial Services Account Associate II",
+    company: "FIS Global",
+    period: "February 2023 - December 2024",
+    location: "Poznan, Poland",
+    shortSummary: "Executed complex mutual fund transactions and maintained regulatory compliance standards.",
+    achievements: [
+      "Executed mutual fund transactions: liquidations, distributions, exchanges, and purchases",
+      "Supported daily operations through research, documentation, and internal communication",
+      "Maintained accuracy of client instructions and contributed to data integrity initiatives",
+      "Ensured client account compliance with regulatory and operational standards, identifying potential risk areas"
+    ],
+    technologies: ["Financial Operations", "Mutual Funds", "Regulatory Compliance", "Data Management"]
+  },
+  {
+    title: "Junior Finance Analyst - NAV Middle Office, Treasury",
+    company: "State Street Bank International",
+    period: "October 2022 - March 2023",
+    location: "Gdansk, Poland",
+    shortSummary: "Processed treasury operations and supported fund transfer reconciliation across portfolios.",
+    achievements: [
+      "Processed investor wires and supported treasury payment flows across portfolios",
+      "Ensured data accuracy in fund transfers and reconciled incoming financial transactions",
+      "Communicated task completion to stakeholders and resolved ad-hoc treasury and finance requests",
+      "Contributed to operational efficiency improvements in middle office processes"
+    ],
+    technologies: ["Treasury Operations", "Fund Transfers", "Financial Reconciliation", "Middle Office"]
+  },
+  {
+    title: "Finance Intern - Accounts Payable",
+    company: "Kenya Revenue Authority",
+    period: "January 2020 - April 2020",
+    location: "Nairobi, Kenya",
+    shortSummary: "Managed SAP-based payment processing and maintained financial documentation accuracy.",
+    achievements: [
+      "Processed payments and maintained SAP-led payment records for internal and external suppliers",
+      "Tracked treasury flows across multiple departments, processed invoices, and imprest entries",
+      "Ensured accuracy in medical reimbursements and project finance documentation",
+      "Supported accounts payable operations and improved process documentation"
+    ],
+    technologies: ["SAP ERP", "Accounts Payable", "Financial Documentation", "Treasury Management"]
+  }
+];
+
+const education = [
+  {
+    degree: "Master of Science in Quantitative Finance",
+    institution: "Poznan University of Economics and Business", 
+    period: "September 2022 - July 2024",
+    gpa: "Distinction",
+    focus: "Derivatives Pricing, Econometrics, Financial Modelling, Corporate Finance, Risk Analysis, R, VBA"
+  },
+  {
+    degree: "Bachelor of Science in Commerce",
+    institution: "Strathmore University", 
+    period: "September 2017 - September 2021",
+    gpa: "Second Class Upper Division",
+    focus: "Major in Accounting, Minor in Finance"
+  }
+];
+
+const certifications = [
+  {
+    name: "CEFR English C1 Level",
+    issuer: "Poznan University of Economics and Business",
+    year: "2024",
+    id: "CEFR-C1-2024"
+  },
+  {
+    name: "Strategic Thinking",
+    issuer: "LinkedIn Learning",
+    year: "2024",
+    id: "ST-LL-2024"
+  },
+  {
+    name: "Excel: Power Pivot for Beginners",
+    issuer: "LinkedIn Learning",
+    year: "2023",
+    id: "PP-LL-2023"
+  },
+  {
+    name: "ACCA P1 Level",
+    issuer: "Strathmore University",
+    year: "2021",
+    id: "ACCA-P1-2021"
+  }
+];
+
+const skillIcons = {
+  'SAP ERP': 'Database',
+  'Advanced Excel': 'Database',
+  'R Programming': 'Terminal',
+  'SPSS': 'Terminal',
+  'Python': 'Terminal',
+  'VBA': 'Terminal',
+  'Financial Modeling': 'TrendingUp',
+  'Derivatives Pricing': 'TrendingUp',
+  'CVA Calculations': 'TrendingUp',
+  'Monte Carlo Simulations': 'TrendingUp',
+  'GARCH Models': 'TrendingUp',
+  'Risk Management': 'Star',
+  'Treasury Operations': 'Database',
+  'Financial Reporting': 'Database',
+  'Econometrics': 'TrendingUp',
+  'Portfolio Management': 'Star',
+  'Regulatory Compliance': 'Star',
+  'Client Relations': 'Users'
+};
+
+const navigationItems = [
+  { id: 'overview', label: 'Overview', icon: 'User' },
+  { id: 'experience', label: 'Experience', icon: 'Briefcase' },
+  { id: 'projects', label: 'Projects', icon: 'Code2' },
+  { id: 'skills', label: 'Skills', icon: 'Star' },
+  { id: 'education', label: 'Education', icon: 'Target' }
+];
 
 // Reusable Read More Component
 const ReadMoreText = ({ text, shortText, maxLength = 150 }) => {
@@ -87,7 +298,7 @@ const ExperienceCard = ({ job, index }) => {
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ delay: index * 0.1, duration: 0.6 }}
       viewport={{ once: true }}
-      className="glass-card relative"
+      className="bg-slate-900/50 backdrop-blur-xl border border-white/10 rounded-xl p-6 hover:bg-slate-900/70 transition-all duration-300 relative"
     >
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 to-cyan-400 rounded-l-xl"></div>
       
@@ -134,12 +345,12 @@ const ExperienceCard = ({ job, index }) => {
 
       <div className="flex flex-wrap gap-2 mb-4">
         {job.technologies.slice(0, isExpanded ? job.technologies.length : 3).map((tech, idx) => (
-          <span key={idx} className="tech-badge text-xs">
+          <span key={idx} className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded-md text-xs font-medium border border-blue-400/30">
             {tech}
           </span>
         ))}
         {!isExpanded && job.technologies.length > 3 && (
-          <span className="tech-badge text-xs opacity-60">
+          <span className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded-md text-xs font-medium border border-blue-400/30 opacity-60">
             +{job.technologies.length - 3} more
           </span>
         )}
@@ -175,11 +386,15 @@ const ProjectCard = ({ project, index }) => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: index * 0.1, duration: 0.6 }}
       viewport={{ once: true }}
-      className="project-card group h-full flex flex-col"
+      className="bg-slate-900/40 backdrop-blur-xl border border-white/10 rounded-xl p-6 hover:bg-slate-900/60 transition-all duration-300 group h-full flex flex-col"
     >
       <div className="flex justify-between items-start mb-3">
         <h3 className="text-base sm:text-lg font-bold text-white flex-1 pr-3">{project.title}</h3>
-        <span className={`status-badge status-${project.status} whitespace-nowrap text-xs`}>
+        <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+          project.status === 'complete' ? 'bg-green-500/20 text-green-300 border border-green-400/30' :
+          project.status === 'ongoing' ? 'bg-blue-500/20 text-blue-300 border border-blue-400/30' :
+          'bg-yellow-500/20 text-yellow-300 border border-yellow-400/30'
+        } whitespace-nowrap`}>
           {project.status}
         </span>
       </div>
@@ -202,7 +417,7 @@ const ProjectCard = ({ project, index }) => {
             <div className="pt-2 border-t border-gray-700/30">
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, idx) => (
-                  <span key={idx} className="tech-badge text-xs">
+                  <span key={idx} className="bg-blue-500/20 text-blue-300 px-2 py-1 rounded-md text-xs font-medium border border-blue-400/30">
                     {tech}
                   </span>
                 ))}
@@ -210,19 +425,19 @@ const ProjectCard = ({ project, index }) => {
               
               <div className="flex flex-col sm:flex-row gap-2">
                 {project.github && (
-                  <a href={project.github} className="btn-ghost text-sm flex-1" target="_blank" rel="noopener noreferrer">
+                  <a href={project.github} className="flex items-center justify-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-medium transition-colors text-sm flex-1" target="_blank" rel="noopener noreferrer">
                     <Github size={16} />
                     Code
                   </a>
                 )}
                 {project.demo && (
-                  <a href={project.demo} className="btn-primary text-sm flex-1" target="_blank" rel="noopener noreferrer">
+                  <a href={project.demo} className="flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white rounded-lg font-medium transition-all duration-300 text-sm flex-1" target="_blank" rel="noopener noreferrer">
                     <ExternalLink size={16} />
                     Live Demo
                   </a>
                 )}
                 {project.needsCollaboration && (
-                  <button className="btn-secondary text-sm flex-1">
+                  <button className="flex items-center justify-center gap-2 px-4 py-2 bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-400/30 rounded-lg font-medium transition-colors text-sm flex-1">
                     <Layers size={16} />
                     Collaborate
                   </button>
@@ -286,7 +501,6 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full blur opacity-60"></div>
               <div className="relative w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full p-0.5">
                 {siteContent.personal.profileImage ? (
-                  /* eslint-disable-next-line @next/next/no-img-element */
                   <img 
                     src={siteContent.personal.profileImage}
                     alt={siteContent.personal.name}
@@ -299,14 +513,14 @@ export default function Home() {
                 )}
               </div>
             </div>
-            <h1 className="text-base font-bold text-gradient-primary">
+            <h1 className="text-base font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
               {siteContent.personal.name.split(' ')[0]}
             </h1>
           </div>
           
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="glass-card-minimal p-2"
+            className="bg-slate-900/50 backdrop-blur-xl border border-white/10 rounded-lg p-2"
           >
             {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
@@ -328,7 +542,9 @@ export default function Home() {
                     <button
                       key={item.id}
                       onClick={() => scrollToSection(item.id)}
-                      className={`nav-link w-full justify-start text-sm ${activeSection === item.id ? 'active' : ''}`}
+                      className={`flex items-center gap-3 w-full px-3 py-2.5 text-left text-gray-300 hover:text-white hover:bg-blue-500/20 rounded-lg transition-all duration-200 text-sm ${
+                        activeSection === item.id ? 'bg-blue-500/20 text-blue-300 border border-blue-400/30' : ''
+                      }`}
                     >
                       <Icon size={16} />
                       <span>{item.label}</span>
@@ -337,13 +553,13 @@ export default function Home() {
                 })}
                 
                 <div className="pt-3 mt-3 border-t border-white/10 space-y-2">
-                  <button className="btn-primary w-full text-sm py-2">
+                  <button className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white rounded-lg font-medium transition-all duration-300 text-sm">
                     <Download size={14} />
                     Download Resume
                   </button>
                   <button 
                     onClick={() => scrollToSection('contact')}
-                    className="btn-secondary w-full text-sm py-2"
+                    className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-400/30 rounded-lg font-medium transition-colors text-sm"
                   >
                     <Send size={14} />
                     Get In Touch
@@ -362,162 +578,171 @@ export default function Home() {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="hidden lg:block lg:w-80 xl:w-96 lg:fixed lg:h-screen glass-card-minimal lg:m-4 xl:m-6 lg:overflow-y-auto"
+          className="hidden lg:block lg:w-80 xl:w-96 lg:fixed lg:h-screen bg-slate-900/30 backdrop-blur-2xl border border-white/10 lg:m-4 xl:m-6 lg:overflow-y-auto rounded-2xl"
         >
-          {/* Profile Section */}
-          <div className="text-center mb-6">
+          <div className="p-6">
+            {/* Profile Section */}
+            <div className="text-center mb-6">
+              <motion.div 
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 0.3, duration: 0.6 }}
+                className="relative mb-4"
+              >
+                <div className="w-24 h-24 xl:w-32 xl:h-32 mx-auto relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-cyan-400 to-teal-400 rounded-full blur-lg opacity-60 animate-pulse"></div>
+                  <div className="relative w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full p-1">
+                    {siteContent.personal.profileImage ? (
+                      <img 
+                        src={siteContent.personal.profileImage}
+                        alt={siteContent.personal.name}
+                        className="w-full h-full object-cover rounded-full"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center">
+                        <User size={48} className="text-cyan-400" />
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+              
+              <motion.h1 
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.5, duration: 0.6 }}
+                className="text-lg xl:text-2xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2"
+              >
+                {siteContent.personal.name}
+              </motion.h1>
+              
+              <motion.p 
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.6, duration: 0.6 }}
+                className="text-sm xl:text-lg font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3"
+              >
+                {siteContent.personal.title}
+              </motion.p>
+
+              <motion.div 
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.7, duration: 0.6 }}
+                className="flex justify-center items-center gap-2 text-xs text-green-400 mb-4"
+              >
+                <Calendar size={12} />
+                <span>Available for opportunities</span>
+              </motion.div>
+            </div>
+
+            {/* Contact Information */}
             <motion.div 
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
-              className="relative mb-4"
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.6 }}
+              className="space-y-3 mb-6"
             >
-              <div className="w-24 h-24 xl:w-32 xl:h-32 mx-auto relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-cyan-400 to-teal-400 rounded-full blur-lg opacity-60 animate-pulse"></div>
-                <div className="relative w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full p-1">
-                  {siteContent.personal.profileImage ? (
-                    /* eslint-disable-next-line @next/next/no-img-element */
-                    <img 
-                      src={siteContent.personal.profileImage}
-                      alt={siteContent.personal.name}
-                      className="w-full h-full object-cover rounded-full"
-                    />
-                  ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center">
-                      <User size={48} className="text-cyan-400" />
-                    </div>
-                  )}
+              <h3 className="text-base font-bold text-white mb-3 flex items-center gap-2">
+                <Mail size={16} className="text-blue-400" />
+                Contact
+              </h3>
+              
+              <div className="space-y-2">
+                <div className="flex items-center gap-2 text-xs">
+                  <MapPin size={14} className="text-cyan-400 flex-shrink-0" />
+                  <span className="text-gray-300">{siteContent.personal.location}</span>
+                </div>
+                
+                <div className="flex items-center gap-2 text-xs">
+                  <Mail size={14} className="text-cyan-400 flex-shrink-0" />
+                  <a href={`mailto:${siteContent.personal.email}`} className="text-gray-300 hover:text-white transition-colors break-all">
+                    {siteContent.personal.email}
+                  </a>
+                </div>
+                
+                <div className="flex items-center gap-2 text-xs">
+                  <Phone size={14} className="text-cyan-400 flex-shrink-0" />
+                  <span className="text-gray-300">{siteContent.personal.phone}</span>
                 </div>
               </div>
             </motion.div>
-            
-            <motion.h1 
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-              className="text-lg xl:text-2xl font-black text-gradient-primary mb-2"
-            >
-              {siteContent.personal.name}
-            </motion.h1>
-            
-            <motion.p 
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-sm xl:text-lg font-semibold text-gradient-accent mb-3"
-            >
-              {siteContent.personal.title}
-            </motion.p>
 
+            {/* Social Links */}
             <motion.div 
-              initial={{ y: 20, opacity: 0 }}
+              initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.7, duration: 0.6 }}
-              className="flex justify-center items-center gap-2 text-xs text-green-400 mb-4"
+              transition={{ delay: 0.9, duration: 0.6 }}
+              className="mb-6"
             >
-              <Calendar size={12} />
-              <span>Available for opportunities</span>
+              <h3 className="text-base font-bold text-white mb-3">Connect</h3>
+              <div className="flex gap-2">
+                {siteContent.personal.socialLinks.github && (
+                  <a href={siteContent.personal.socialLinks.github} className="bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-lg transition-colors" target="_blank" rel="noopener noreferrer">
+                    <Github size={16} />
+                  </a>
+                )}
+                {siteContent.personal.socialLinks.linkedin && (
+                  <a href={siteContent.personal.socialLinks.linkedin} className="bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-lg transition-colors" target="_blank" rel="noopener noreferrer">
+                    <Linkedin size={16} />
+                  </a>
+                )}
+                {siteContent.personal.socialLinks.twitter && (
+                  <a href={siteContent.personal.socialLinks.twitter} className="bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-lg transition-colors" target="_blank" rel="noopener noreferrer">
+                    <Twitter size={16} />
+                  </a>
+                )}
+              </div>
+            </motion.div>
+
+            {/* Quick Actions */}
+            <motion.div 
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.0, duration: 0.6 }}
+              className="space-y-2 mb-6"
+            >
+              <button className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white rounded-lg font-medium transition-all duration-300 text-sm">
+                <Download size={16} />
+                Download Resume
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-400/30 rounded-lg font-medium transition-colors text-sm"
+              >
+                <Send size={16} />
+                Get In Touch
+              </button>
+            </motion.div>
+
+            {/* Navigation */}
+            <motion.div 
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 1.1, duration: 0.6 }}
+              className="pt-4 border-t border-gray-700"
+            >
+              <h3 className="text-xs font-bold text-gray-400 mb-2 uppercase tracking-wider">Sections</h3>
+              <nav className="space-y-1">
+                {navigationItems.map((item) => {
+                  const Icon = getIcon(item.icon);
+                  return (
+                    <button
+                      key={item.id}
+                      onClick={() => scrollToSection(item.id)}
+                      className={`flex items-center gap-3 w-full px-3 py-2.5 text-left text-gray-300 hover:text-white hover:bg-blue-500/20 rounded-lg transition-all duration-200 text-sm ${
+                        activeSection === item.id ? 'bg-blue-500/20 text-blue-300 border border-blue-400/30' : ''
+                      }`}
+                    >
+                      <Icon size={14} />
+                      <span>{item.label}</span>
+                      <ChevronRight size={12} className="ml-auto" />
+                    </button>
+                  );
+                })}
+              </nav>
             </motion.div>
           </div>
-
-          {/* Contact Information */}
-          <motion.div 
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-            className="space-y-3 mb-6"
-          >
-            <h3 className="text-base font-bold text-white mb-3 flex items-center gap-2">
-              <Mail size={16} className="text-blue-400" />
-              Contact
-            </h3>
-            
-            <div className="space-y-2">
-              <div className="flex items-center gap-2 text-xs">
-                <MapPin size={14} className="text-cyan-400 flex-shrink-0" />
-                <span className="text-gray-300">{siteContent.personal.location}</span>
-              </div>
-              
-              <div className="flex items-center gap-2 text-xs">
-                <Mail size={14} className="text-cyan-400 flex-shrink-0" />
-                <a href={`mailto:${siteContent.personal.email}`} className="text-gray-300 hover:text-white transition-colors break-all">
-                  {siteContent.personal.email}
-                </a>
-              </div>
-              
-              <div className="flex items-center gap-2 text-xs">
-                <Phone size={14} className="text-cyan-400 flex-shrink-0" />
-                <span className="text-gray-300">{siteContent.personal.phone}</span>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Social Links */}
-          <motion.div 
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.9, duration: 0.6 }}
-            className="mb-6"
-          >
-            <h3 className="text-base font-bold text-white mb-3">Connect</h3>
-            <div className="flex gap-2">
-              <a href={siteContent.personal.socialLinks.github} className="social-link p-2" target="_blank" rel="noopener noreferrer">
-                <Github size={16} />
-              </a>
-              <a href={siteContent.personal.socialLinks.linkedin} className="social-link p-2" target="_blank" rel="noopener noreferrer">
-                <Linkedin size={16} />
-              </a>
-              <a href={siteContent.personal.socialLinks.twitter} className="social-link p-2" target="_blank" rel="noopener noreferrer">
-                <Twitter size={16} />
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Quick Actions */}
-          <motion.div 
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.0, duration: 0.6 }}
-            className="space-y-2 mb-6"
-          >
-            <button className="btn-primary w-full text-sm py-2">
-              <Download size={16} />
-              Download Resume
-            </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
-              className="btn-secondary w-full text-sm py-2"
-            >
-              <Send size={16} />
-              Get In Touch
-            </button>
-          </motion.div>
-
-          {/* Navigation */}
-          <motion.div 
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.1, duration: 0.6 }}
-            className="pt-4 border-t border-gray-700"
-          >
-            <h3 className="text-xs font-bold text-gray-400 mb-2 uppercase tracking-wider">Sections</h3>
-            <nav className="space-y-1">
-              {navigationItems.map((item) => {
-                const Icon = getIcon(item.icon);
-                return (
-                  <button
-                    key={item.id}
-                    onClick={() => scrollToSection(item.id)}
-                    className={`nav-link w-full justify-start text-sm ${activeSection === item.id ? 'active' : ''}`}
-                  >
-                    <Icon size={14} />
-                    <span>{item.label}</span>
-                    <ChevronRight size={12} className="ml-auto" />
-                  </button>
-                );
-              })}
-            </nav>
-          </motion.div>
         </motion.div>
 
         {/* Main Content Area */}
@@ -530,13 +755,12 @@ export default function Home() {
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6 }}
-                className="glass-container p-4"
+                className="bg-slate-900/40 backdrop-blur-xl border border-white/10 rounded-xl p-4"
               >
                 <div className="w-20 h-20 mx-auto relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-cyan-400 to-teal-400 rounded-full blur-lg opacity-60"></div>
                   <div className="relative w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full p-1 overflow-hidden">
                     {siteContent.personal.profileImage ? (
-                      /* eslint-disable-next-line @next/next/no-img-element */
                       <img 
                         src={siteContent.personal.profileImage}
                         alt={siteContent.personal.name}
@@ -552,11 +776,11 @@ export default function Home() {
                   </div>
                 </div>
                 
-                <h1 className="text-lg sm:text-xl font-black text-gradient-primary mb-1">
+                <h1 className="text-lg sm:text-xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-1">
                   {siteContent.personal.name}
                 </h1>
                 
-                <p className="text-sm sm:text-base font-semibold text-gradient-accent mb-3">
+                <p className="text-sm sm:text-base font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3">
                   {siteContent.personal.title}
                 </p>
 
@@ -572,16 +796,22 @@ export default function Home() {
                 </div>
 
                 <div className="flex justify-center gap-2 mb-4">
-                  <a href={siteContent.personal.socialLinks.github} className="social-link p-2" target="_blank" rel="noopener noreferrer">
-                    <Github size={16} />
-                  </a>
-                  <a href={siteContent.personal.socialLinks.linkedin} className="social-link p-2" target="_blank" rel="noopener noreferrer">
-                    <Linkedin size={16} />
-                  </a>
-                  <a href={siteContent.personal.socialLinks.twitter} className="social-link p-2" target="_blank" rel="noopener noreferrer">
-                    <Twitter size={16} />
-                  </a>
-                  <a href={`mailto:${siteContent.personal.email}`} className="social-link p-2">
+                  {siteContent.personal.socialLinks.github && (
+                    <a href={siteContent.personal.socialLinks.github} className="bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-lg transition-colors" target="_blank" rel="noopener noreferrer">
+                      <Github size={16} />
+                    </a>
+                  )}
+                  {siteContent.personal.socialLinks.linkedin && (
+                    <a href={siteContent.personal.socialLinks.linkedin} className="bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-lg transition-colors" target="_blank" rel="noopener noreferrer">
+                      <Linkedin size={16} />
+                    </a>
+                  )}
+                  {siteContent.personal.socialLinks.twitter && (
+                    <a href={siteContent.personal.socialLinks.twitter} className="bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-lg transition-colors" target="_blank" rel="noopener noreferrer">
+                      <Twitter size={16} />
+                    </a>
+                  )}
+                  <a href={`mailto:${siteContent.personal.email}`} className="bg-slate-800 hover:bg-slate-700 text-white p-2 rounded-lg transition-colors">
                     <Mail size={16} />
                   </a>
                 </div>
@@ -595,28 +825,28 @@ export default function Home() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="glass-container p-4 sm:p-6"
+              className="bg-slate-900/40 backdrop-blur-xl border border-white/10 rounded-xl p-4 sm:p-6"
             >
               <div className="flex items-center gap-2 mb-4">
                 <Target className="text-blue-400" size={24} />
-                <h2 className="text-xl sm:text-2xl font-black text-gradient-primary">Professional Overview</h2>
+                <h2 className="text-xl sm:text-2xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Professional Overview</h2>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-4 sm:mb-6">
-                <div className="glass-card text-center p-3">
+                <div className="bg-slate-900/50 backdrop-blur-xl border border-white/10 rounded-xl text-center p-3">
                   <TrendingUp className="text-cyan-400 mx-auto mb-2" size={24} />
-                  <h4 className="font-bold text-base sm:text-lg text-white mb-1">7+ Years</h4>
+                  <h4 className="font-bold text-base sm:text-lg text-white mb-1">5+ Years</h4>
                   <p className="text-gray-400 text-xs sm:text-sm">Experience</p>
                 </div>
-                <div className="glass-card text-center p-3">
+                <div className="bg-slate-900/50 backdrop-blur-xl border border-white/10 rounded-xl text-center p-3">
                   <Users className="text-blue-400 mx-auto mb-2" size={24} />
-                  <h4 className="font-bold text-base sm:text-lg text-white mb-1">20+ Projects</h4>
-                  <p className="text-gray-400 text-xs sm:text-sm">Delivered</p>
+                  <h4 className="font-bold text-base sm:text-lg text-white mb-1">MSc Finance</h4>
+                  <p className="text-gray-400 text-xs sm:text-sm">Quantitative</p>
                 </div>
-                <div className="glass-card text-center p-3">
+                <div className="bg-slate-900/50 backdrop-blur-xl border border-white/10 rounded-xl text-center p-3">
                   <Zap className="text-green-400 mx-auto mb-2" size={24} />
-                  <h4 className="font-bold text-base sm:text-lg text-white mb-1">CEO & CTO</h4>
-                  <p className="text-gray-400 text-xs sm:text-sm">Leadership</p>
+                  <h4 className="font-bold text-base sm:text-lg text-white mb-1">Team Leader</h4>
+                  <p className="text-gray-400 text-xs sm:text-sm">Current Role</p>
                 </div>
               </div>
 
@@ -635,11 +865,11 @@ export default function Home() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="glass-container p-4 sm:p-6"
+              className="bg-slate-900/40 backdrop-blur-xl border border-white/10 rounded-xl p-4 sm:p-6"
             >
               <div className="flex items-center gap-2 mb-4 sm:mb-6">
                 <Briefcase className="text-blue-400" size={24} />
-                <h2 className="text-xl sm:text-2xl font-black text-gradient-primary">Professional Experience</h2>
+                <h2 className="text-xl sm:text-2xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Professional Experience</h2>
               </div>
 
               <div className="space-y-4 sm:space-y-6">
@@ -656,11 +886,11 @@ export default function Home() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="glass-container p-4 sm:p-6"
+              className="bg-slate-900/40 backdrop-blur-xl border border-white/10 rounded-xl p-4 sm:p-6"
             >
               <div className="flex items-center gap-2 mb-4 sm:mb-6">
                 <Code2 className="text-blue-400" size={24} />
-                <h2 className="text-xl sm:text-2xl font-black text-gradient-primary">Featured Projects</h2>
+                <h2 className="text-xl sm:text-2xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Featured Projects</h2>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
@@ -677,11 +907,11 @@ export default function Home() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="glass-container p-4 sm:p-6"
+              className="bg-slate-900/40 backdrop-blur-xl border border-white/10 rounded-xl p-4 sm:p-6"
             >
               <div className="flex items-center gap-2 mb-4 sm:mb-6">
                 <Star className="text-blue-400" size={24} />
-                <h2 className="text-xl sm:text-2xl font-black text-gradient-primary">Technical Skills</h2>
+                <h2 className="text-xl sm:text-2xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Technical Skills</h2>
               </div>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-3">
@@ -696,9 +926,9 @@ export default function Home() {
                       whileInView={{ scale: 1, opacity: 1 }}
                       transition={{ delay: index * 0.05, duration: 0.5 }}
                       viewport={{ once: true }}
-                      className="skill-card p-3"
+                      className="bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-xl p-3 hover:bg-slate-900/80 transition-all duration-300 text-center group"
                     >
-                      <Icon className="skill-icon mx-auto mb-2" size={20} />
+                      <Icon className="text-blue-400 group-hover:text-cyan-400 transition-colors mx-auto mb-2" size={20} />
                       <span className="text-xs font-medium text-white text-center leading-tight block">{skill}</span>
                     </motion.div>
                   );
@@ -713,11 +943,11 @@ export default function Home() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="glass-container p-4 sm:p-6"
+              className="bg-slate-900/40 backdrop-blur-xl border border-white/10 rounded-xl p-4 sm:p-6"
             >
               <div className="flex items-center gap-2 mb-4 sm:mb-6">
                 <Target className="text-blue-400" size={24} />
-                <h2 className="text-xl sm:text-2xl font-black text-gradient-primary">Education & Certifications</h2>
+                <h2 className="text-xl sm:text-2xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Education & Certifications</h2>
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
@@ -732,7 +962,7 @@ export default function Home() {
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ delay: index * 0.2, duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="glass-card p-3 sm:p-4"
+                        className="bg-slate-900/50 backdrop-blur-xl border border-white/10 rounded-xl p-3 sm:p-4"
                       >
                         <h4 className="font-bold text-white mb-1 text-sm sm:text-base">{edu.degree}</h4>
                         <p className="text-blue-300 font-semibold mb-1 text-sm">{edu.institution}</p>
@@ -757,7 +987,7 @@ export default function Home() {
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ delay: index * 0.2, duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="glass-card p-3 sm:p-4"
+                        className="bg-slate-900/50 backdrop-blur-xl border border-white/10 rounded-xl p-3 sm:p-4"
                       >
                         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 sm:gap-0">
                           <div className="flex-1">
@@ -785,37 +1015,39 @@ export default function Home() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="glass-container p-4 sm:p-6 text-center"
+              className="bg-slate-900/40 backdrop-blur-xl border border-white/10 rounded-xl p-4 sm:p-6 text-center"
             >
               <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6">
                 <Send className="text-blue-400" size={24} />
-                <h2 className="text-xl sm:text-2xl font-black text-gradient-primary">Ready to Collaborate</h2>
+                <h2 className="text-xl sm:text-2xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Ready to Collaborate</h2>
               </div>
 
               <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 max-w-2xl mx-auto leading-relaxed">
-                Looking for a multidisciplinary technologist to architect your next breakthrough? Let&#39;s discuss how my Web3 expertise, 
-                quantitative trading systems, and full-stack development skills can drive your technical vision forward.
+                Seeking a results-driven Quantitative Finance professional to enhance your financial operations? 
+                Let's discuss how my expertise in derivatives pricing, risk management, and treasury operations can drive your organization forward.
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-3">
-                <a href={`mailto:${siteContent.personal.email}`} className="btn-primary text-sm py-2">
+                <a href={`mailto:${siteContent.personal.email}`} className="flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white rounded-lg font-medium transition-all duration-300 text-sm">
                   <Mail size={16} />
                   Send Email
                 </a>
-                <a href={siteContent.personal.socialLinks.linkedin} className="btn-secondary text-sm py-2" target="_blank" rel="noopener noreferrer">
-                  <Linkedin size={16} />
-                  Connect on LinkedIn
-                </a>
-                <a href={siteContent.personal.socialLinks.github} className="btn-ghost text-sm py-2" target="_blank" rel="noopener noreferrer">
-                  <Github size={16} />
-                  View GitHub
+                {siteContent.personal.socialLinks.github && (
+                  <a href={siteContent.personal.socialLinks.github} className="flex items-center justify-center gap-2 px-4 py-2 bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-400/30 rounded-lg font-medium transition-colors text-sm" target="_blank" rel="noopener noreferrer">
+                    <Github size={16} />
+                    View GitHub
+                  </a>
+                )}
+                <a href={`tel:${siteContent.personal.phone}`} className="flex items-center justify-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-medium transition-colors text-sm">
+                  <Phone size={16} />
+                  Call Now
                 </a>
               </div>
 
               {/* Contact Details for Mobile */}
               <div className="lg:hidden mt-6 pt-4 border-t border-gray-700/30">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
-                  <div className="glass-card-minimal p-3">
+                  <div className="bg-slate-900/30 backdrop-blur-xl border border-white/10 rounded-lg p-3">
                     <h4 className="font-bold text-white mb-2 flex items-center gap-2 text-sm">
                       <Mail size={16} className="text-blue-400" />
                       Email
@@ -824,7 +1056,7 @@ export default function Home() {
                       {siteContent.personal.email}
                     </a>
                   </div>
-                  <div className="glass-card-minimal p-3">
+                  <div className="bg-slate-900/30 backdrop-blur-xl border border-white/10 rounded-lg p-3">
                     <h4 className="font-bold text-white mb-2 flex items-center gap-2 text-sm">
                       <MapPin size={16} className="text-cyan-400" />
                       Location
