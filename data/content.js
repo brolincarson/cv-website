@@ -1,221 +1,235 @@
 export const siteContent = {
   personal: {
-    name: "Ayako Victor Benson",
-    title: "Full Stack Web3 Developer & System Architect",
-    email: "benvicky6133@gmail.com",
-    phone: "Kenya 2020-00200",
-    location: "Nairobi, Kenya",
-    profileImage: "https://raw.githubusercontent.com/gitboycrypto/cv-website/main/public/profile.jpeg",
-    bio: "Multidisciplinary technologist and entrepreneur with commanding expertise spanning full-stack Web3 development, quantitative trading systems, and electrical engineering. As Founder and CTO of MoneyTreesIncorporated, I architect and execute revolutionary blockchain solutions that directly address emerging market financial infrastructure challenges. My technical leadership encompasses building Solana-based cryptocurrency exchanges with seamless M-Pesa integration, engineering 5+ proprietary algorithmic trading bots that leverage advanced technical indicators including Supertrend and Pivot Point systems, and delivering enterprise-grade applications that serve real-world clients across multiple industries. I bridge the gap between traditional electrical engineering foundations and cutting-edge Web3 innovations, having successfully transitioned from hands-on electrical installations and solar system deployments to pioneering decentralized financial technologies. My development portfolio demonstrates consistent delivery of production-ready systems: from comprehensive church finance management platforms to YouTube-scale video sharing applications, each solution engineered with scalable architecture, robust security protocols, and intuitive user experiences. I transform complex technical challenges into streamlined, profitable systems that generate measurable business impact. My leadership extends beyond code - I mentor development teams, establish engineering best practices, and drive cross-functional collaboration that accelerates project delivery. Every system I build combines deep technical expertise with strategic business understanding, ensuring solutions that scale efficiently and adapt to rapidly evolving market demands. I deliver results that matter.",
-    shortBio: "Multidisciplinary technologist and entrepreneur with commanding expertise spanning full-stack Web3 development, quantitative trading systems, and electrical engineering. As Founder and CTO of MoneyTreesIncorporated, I architect revolutionary blockchain solutions for emerging markets.",
+    name: "Stacy Ayako",
+    title: "Quantitative Finance Professional & Risk Management Specialist",
+    email: "ayakostacy@gmail.com",
+    phone: "+48 502 416 510",
+    location: "Poznan, Poland",
+    profileImage: "https://images.unsplash.com/photo-1494790108755-2616b612b048?w=400&h=400&fit=crop&crop=face",
+    bio: "Finance professional with a Master's in Quantitative Finance and comprehensive experience in client servicing, financial operations, and treasury functions. Possesses strong skills in derivatives pricing, CVA computation, and financial analysis, with practical expertise in SAP, Excel, and R. Proven ability to work cross-functionally to improve process efficiency and ensure accuracy in financial reporting. Adept in risk management, treasury processing, and supporting end-to-end finance functions. Currently serving as Team Lead at FIS Global, overseeing daily operations and managing complex client accounts while ensuring regulatory compliance. My expertise spans from Monte Carlo simulations and GARCH modeling to practical treasury operations and client relationship management. I bridge theoretical quantitative finance knowledge with real-world financial services applications, delivering measurable results in risk assessment, portfolio management, and operational efficiency.",
+    shortBio: "Finance professional with a Master's in Quantitative Finance and comprehensive experience in client servicing, financial operations, and treasury functions. Currently serving as Team Lead at FIS Global with expertise in derivatives pricing, risk management, and treasury operations.",
     socialLinks: {
-      github: "https://github.com/gitboycrypto",
-      linkedin: "https://linkedin.com/in/ayakovictorbenson",
-      twitter: "https://twitter.com/gitboycrypto"
+      github: "https://github.com/stacyayako",
+      linkedin: "https://linkedin.com/in/stacyayako",
+      twitter: "https://twitter.com/stacyayako"
     }
   },
   skills: [
-    "Solana", "Rust", "React", "Node.js", "TypeScript", "JavaScript", 
-    "Python", "C++", "MongoDB", "PostgreSQL", "Firebase", "Docker", 
-    "Git", "Arduino", "IoT Systems", "Web3", "Blockchain", "Smart Contracts"
+    "SAP ERP", "Advanced Excel", "R Programming", "SPSS", "Python", "VBA", 
+    "Financial Modeling", "Derivatives Pricing", "CVA Calculations", "Monte Carlo Simulations", 
+    "GARCH Models", "Risk Management", "Treasury Operations", "Financial Reporting", 
+    "Econometrics", "Portfolio Management", "Regulatory Compliance", "Client Relations"
   ],
   projects: [
     {
       id: 1,
-      title: "MoneyTreesIncorporated",
-      shortDescription: "Solana-based cryptocurrency exchange for the Kenyan market with M-Pesa integration.",
-      description: "Solana-based cryptocurrency exchange designed specifically for the Kenyan market, featuring M-Pesa integration and KYC-free onboarding. Built comprehensive trading infrastructure with automated monitoring tools.",
-      status: "ongoing",
-      technologies: ["Solana", "Rust", "React", "Node.js", "M-Pesa API"],
-      github: "https://github.com/ayakovictorbenson/moneytrees",
-      demo: "https://www.moneytreesincorporated.com/",
+      title: "Credit Valuation Adjustment (CVA) Analysis",
+      shortDescription: "Comprehensive CVA computation for FX Forwards and Credit Default Swaps.",
+      description: "Developed and implemented Credit Valuation Adjustment models for FX Forwards and Credit Default Swaps, incorporating counterparty credit risk into derivative pricing. Utilized advanced mathematical models and Monte Carlo simulations to assess credit exposure and potential losses.",
+      status: "complete",
+      technologies: ["R", "Monte Carlo", "Financial Modeling", "Risk Management"],
+      github: "https://github.com/stacyayako",
       needsCollaboration: false
     },
     {
       id: 2,
-      title: "Quantitative Trading Bot Suite",
-      shortDescription: "5+ proprietary algorithmic trading bots with advanced technical indicators.",
-      description: "5+ proprietary algorithmic trading bots deployed on Bitget utilizing Supertrend, Pivot Point Supertrend, and Chandelier Exit indicators. Features real-time risk management and live signal processing.",
+      title: "Monte Carlo Options Pricing Model",
+      shortDescription: "Advanced pricing model for lookback options using Monte Carlo simulations.",
+      description: "Built sophisticated Monte Carlo simulation framework for pricing lookback options, incorporating path-dependent features and stochastic volatility models. Developed fair value estimation techniques and sensitivity analysis tools.",
       status: "complete",
-      technologies: ["Python", "JavaScript", "Bitget API", "Technical Indicators"],
-      github: "https://github.com/gitboycrypto",
+      technologies: ["R", "Monte Carlo", "Options Pricing", "Statistical Modeling"],
+      github: "https://github.com/stacyayako",
       needsCollaboration: false
     },
     {
       id: 3,
-      title: "Church Finance Management System",
-      shortDescription: "Secure platform for managing donations, budgeting, and expense tracking.",
-      description: "Secure and intuitive platform for managing donations, budgeting, and expense tracking. Built for local church with comprehensive financial oversight and reporting capabilities.",
+      title: "Portfolio Risk Management System",
+      shortDescription: "GARCH-based forecasting models for stock returns and VaR assessment.",
+      description: "Designed and implemented GARCH models for forecasting stock returns and market indices, with comprehensive Value-at-Risk (VaR) assessment capabilities. Integrated real-time risk monitoring and stress testing scenarios.",
       status: "complete", 
-      technologies: ["React", "Node.js", "MongoDB", "Express.js"],
-      github: "https://github.com/gitboycrypto",
+      technologies: ["R", "GARCH Models", "VaR", "Risk Analytics"],
+      github: "https://github.com/stacyayako",
       needsCollaboration: false
     },
     {
       id: 4,
-      title: "YouTube-like Video Platform",
-      shortDescription: "Fully responsive video-sharing platform with user uploads and real-time features.",
-      description: "Fully responsive video-sharing platform with user uploads, real-time comments, streaming analytics, and content management. Delivered complete social media experience.",
+      title: "Liquidity Risk Management Framework",
+      shortDescription: "Advanced liquidity scenario modeling and stress testing for derivative portfolios.",
+      description: "Developed comprehensive liquidity risk management system evaluating funding needs under stress conditions for derivative portfolios. Implemented scenario analysis and stress testing frameworks using financial data simulations.",
       status: "complete",
-      technologies: ["React", "Node.js", "MongoDB", "WebSockets", "Video Processing"],
-      github: "https://github.com/gitboycrypto",
+      technologies: ["Financial Modeling", "Stress Testing", "Risk Management", "Derivatives"],
+      github: "https://github.com/stacyayako",
       needsCollaboration: false
     },
     {
       id: 5,
-      title: "Rent Management System",
-      shortDescription: "Comprehensive rental property management platform with tenant portals.",
-      description: "Comprehensive rental property management platform featuring tenant portals, payment tracking, lease management tools, and real estate investor dashboard integration.",
+      title: "Treasury Operations Optimization",
+      shortDescription: "Streamlined treasury payment flows and reconciliation processes at FIS Global.",
+      description: "Led optimization initiatives for treasury payment flows across multiple portfolios, implementing automated reconciliation processes and enhancing data accuracy protocols. Improved operational efficiency and reduced processing time by 30%.",
       status: "complete",
-      technologies: ["React", "Node.js", "PostgreSQL", "Payment Gateway"],
-      github: "https://github.com/gitboycrypto",
+      technologies: ["SAP ERP", "Treasury Management", "Process Optimization", "Financial Operations"],
+      github: "https://github.com/stacyayako",
       needsCollaboration: false
     },
     {
       id: 6,
-      title: "Twitter Automation Bot",
-      shortDescription: "Advanced social media automation system for promotional campaigns.",
-      description: "Advanced social media automation system for promotional campaigns, follower interactions, and analytics scraping. Streamlines targeted marketing operations.",
-      status: "complete",
-      technologies: ["Python", "Twitter API", "Data Analytics", "Automation"],
-      github: "https://github.com/gitboycrypto",
+      title: "Regulatory Compliance Dashboard",
+      shortDescription: "Comprehensive compliance monitoring system for financial services operations.",
+      description: "Developed regulatory compliance monitoring dashboard for tracking adherence to financial services regulations, automated risk control assessments, and real-time compliance reporting for complex client accounts.",
+      status: "ongoing",
+      technologies: ["Excel", "Financial Reporting", "Compliance", "Risk Controls"],
+      github: "https://github.com/stacyayako",
       needsCollaboration: false
     }
   ],
   blogPosts: [
     {
       id: 1,
-      title: "Building Solana DeFi: Lessons from MoneyTreesIncorporated",
-      excerpt: "Real-world insights from architecting a cryptocurrency exchange for emerging markets",
-      date: "2024-12-15",
-      slug: "building-solana-defi"
+      title: "Advanced CVA Calculations in Modern Risk Management",
+      excerpt: "Deep dive into Credit Valuation Adjustment methodologies and practical implementation",
+      date: "2024-12-10",
+      slug: "cva-calculations-risk-management"
     },
     {
       id: 2,
-      title: "Quantitative Trading: From Backtesting to Production",
-      excerpt: "How I built and deployed 5+ profitable trading bots with risk management systems",
-      date: "2024-11-20", 
-      slug: "quantitative-trading-production"
+      title: "Monte Carlo Methods for Derivatives Pricing",
+      excerpt: "Comprehensive guide to implementing Monte Carlo simulations for complex option structures",
+      date: "2024-11-15", 
+      slug: "monte-carlo-derivatives-pricing"
     },
     {
       id: 3,
-      title: "Web3 Infrastructure: Monitoring and Security Best Practices",
-      excerpt: "Essential tools and techniques for maintaining blockchain application health",
-      date: "2024-10-10",
-      slug: "web3-infrastructure-monitoring"
+      title: "GARCH Models in Portfolio Risk Assessment",
+      excerpt: "Practical applications of GARCH modeling for volatility forecasting and VaR calculations",
+      date: "2024-10-20",
+      slug: "garch-models-portfolio-risk"
     }
   ]
 };
 
 export const experience = [
   {
-    title: "Founder & CTO / CEO",
-    company: "MoneyTreesIncorporated",
-    period: "August 2023 - Present",
+    title: "Senior Financial Services Account Associate",
+    company: "FIS Global",
+    period: "January 2025 - Present",
+    location: "Poznan, Poland",
+    shortSummary: "Team Lead overseeing daily operations, client account management, and regulatory compliance.",
+    achievements: [
+      "Serve as Team Lead, overseeing daily operations, coordinating team efforts, and supporting performance management",
+      "Manage complex client accounts and financial transactions, ensuring adherence to regulatory compliance and internal risk controls",
+      "Lead onboarding and training initiatives for new hires, enhancing team productivity and integration",
+      "Handle escalated client queries, ensuring timely resolution and high customer satisfaction through effective communication",
+      "Drive operational efficiency by participating in cross-functional projects aimed at streamlining service delivery and back-office workflows"
+    ],
+    technologies: ["SAP ERP", "Financial Operations", "Risk Management", "Client Relations"]
+  },
+  {
+    title: "Financial Services Account Associate II",
+    company: "FIS Global",
+    period: "February 2023 - December 2024",
+    location: "Poznan, Poland",
+    shortSummary: "Executed complex mutual fund transactions and maintained regulatory compliance standards.",
+    achievements: [
+      "Executed mutual fund transactions: liquidations, distributions, exchanges, and purchases",
+      "Supported daily operations through research, documentation, and internal communication",
+      "Maintained accuracy of client instructions and contributed to data integrity initiatives",
+      "Ensured client account compliance with regulatory and operational standards, identifying potential risk areas"
+    ],
+    technologies: ["Financial Operations", "Mutual Funds", "Regulatory Compliance", "Data Management"]
+  },
+  {
+    title: "Junior Finance Analyst - NAV Middle Office, Treasury",
+    company: "State Street Bank International",
+    period: "October 2022 - March 2023",
+    location: "Gdansk, Poland",
+    shortSummary: "Processed treasury operations and supported fund transfer reconciliation across portfolios.",
+    achievements: [
+      "Processed investor wires and supported treasury payment flows across portfolios",
+      "Ensured data accuracy in fund transfers and reconciled incoming financial transactions",
+      "Communicated task completion to stakeholders and resolved ad-hoc treasury and finance requests",
+      "Contributed to operational efficiency improvements in middle office processes"
+    ],
+    technologies: ["Treasury Operations", "Fund Transfers", "Financial Reconciliation", "Middle Office"]
+  },
+  {
+    title: "Finance Intern - Accounts Payable",
+    company: "Kenya Revenue Authority",
+    period: "January 2020 - April 2020",
     location: "Nairobi, Kenya",
-    shortSummary: "Founded and lead Solana-based crypto exchange for Kenyan market with M-Pesa integration.",
+    shortSummary: "Managed SAP-based payment processing and maintained financial documentation accuracy.",
     achievements: [
-      "Founded and lead Solana-based crypto exchange for Kenyan market with M-Pesa integration",
-      "Designed and implemented multiple automated cryptocurrency trading bots and monitoring tools",
-      "Developed Twitter promotion bot for targeted social media marketing automation",
-      "Built and deployed 5+ proprietary quant trading bots with advanced technical indicators"
+      "Processed payments and maintained SAP-led payment records for internal and external suppliers",
+      "Tracked treasury flows across multiple departments, processed invoices, and imprest entries",
+      "Ensured accuracy in medical reimbursements and project finance documentation",
+      "Supported accounts payable operations and improved process documentation"
     ],
-    technologies: ["Solana", "Rust", "React", "Node.js", "M-Pesa API", "Python"]
-  },
-  {
-    title: "Web3 Developer (Contract)",
-    company: "Chinese Blockchain Firm",
-    period: "January 2025 - February 2025",
-    location: "Remote",
-    shortSummary: "Contributed to Web3 blockchain tooling suite for decentralized identity management.",
-    achievements: [
-      "Contributed to Web3 blockchain tooling suite for decentralized identity management",
-      "Worked with cross-border team delivering secure smart contract interaction modules",
-      "Implemented optimized blockchain infrastructure using TypeScript and Rust",
-      "Delivered production-ready decentralized application components"
-    ],
-    technologies: ["TypeScript", "Rust", "Web3", "Smart Contracts", "Blockchain"]
-  },
-  {
-    title: "Freelance Software Engineer / Tech Partner",
-    company: "Various Clients",
-    period: "2023 - 2025",
-    location: "Kenya & Remote",
-    shortSummary: "Built YouTube-like web app, Church Finance Management System, and Rent Management platform.",
-    achievements: [
-      "Built YouTube-like web app with video uploads, real-time comments, and analytics",
-      "Delivered Church Finance Management System for donation and expense tracking",
-      "Created Rent Management platform with tenant portals and payment integration",
-      "Architected scalable SaaS solutions used by local businesses and institutions"
-    ],
-    technologies: ["React", "Node.js", "MongoDB", "PostgreSQL", "WebSockets"]
-  },
-  {
-    title: "Junior Developer",
-    company: "Lintech Studio",
-    period: "2018 - 2023",
-    location: "Nairobi, Kenya",
-    shortSummary: "Led frontend development for Railways Training Institute and church applications.",
-    achievements: [
-      "Led frontend development for Railways Training Institute educational app",
-      "Built Tassia Central SDA Church app with event management and user systems",
-      "Developed Newlife SDA Church app with real-time updates and admin dashboards",
-      "Delivered robust, maintainable codebases across multiple client projects"
-    ],
-    technologies: ["Android", "Java", "Firebase", "UI/UX Design", "Mobile Development"]
+    technologies: ["SAP ERP", "Accounts Payable", "Financial Documentation", "Treasury Management"]
   }
 ];
 
 export const education = [
   {
-    degree: "Certificate in Electrical Engineering",
-    institution: "Technical Institute", 
-    period: "January 2021 - December 2022",
-    gpa: "Merit",
-    focus: "Circuit Design, Power Distribution & Control Systems"
+    degree: "Master of Science in Quantitative Finance",
+    institution: "Poznan University of Economics and Business", 
+    period: "September 2022 - July 2024",
+    gpa: "Distinction",
+    focus: "Derivatives Pricing, Econometrics, Financial Modelling, Corporate Finance, Risk Analysis, R, VBA"
+  },
+  {
+    degree: "Bachelor of Science in Commerce",
+    institution: "Strathmore University", 
+    period: "September 2017 - September 2021",
+    gpa: "Second Class Upper Division",
+    focus: "Major in Accounting, Minor in Finance"
   }
 ];
 
 export const certifications = [
   {
-    name: "Certified Ethical Hacker",
-    issuer: "EC-Council",
+    name: "CEFR English C1 Level",
+    issuer: "Poznan University of Economics and Business",
     year: "2024",
-    id: "CEH-2024-001"
+    id: "CEFR-C1-2024"
   },
   {
-    name: "Electrical Engineering Certificate",
-    issuer: "Technical Institute",
-    year: "2022",
-    id: "EE-CERT-2022"
+    name: "Strategic Thinking",
+    issuer: "LinkedIn Learning",
+    year: "2024",
+    id: "ST-LL-2024"
   },
   {
-    name: "Full Stack Web Development",
-    issuer: "Self-Taught & Practical Experience",
+    name: "Excel: Power Pivot for Beginners",
+    issuer: "LinkedIn Learning",
     year: "2023",
-    id: "FSWD-2023"
+    id: "PP-LL-2023"
+  },
+  {
+    name: "ACCA P1 Level",
+    issuer: "Strathmore University",
+    year: "2021",
+    id: "ACCA-P1-2021"
   }
 ];
 
 export const skillIcons = {
-  'Solana': 'Code2',
-  'Rust': 'Terminal',
-  'React': 'Code2',
-  'Node.js': 'Server',
-  'TypeScript': 'Terminal',
-  'JavaScript': 'Terminal',
+  'SAP ERP': 'Database',
+  'Advanced Excel': 'Database',
+  'R Programming': 'Terminal',
+  'SPSS': 'Terminal',
   'Python': 'Terminal',
-  'C++': 'Terminal',
-  'MongoDB': 'Database',
-  'PostgreSQL': 'Database',
-  'Firebase': 'Database',
-  'Docker': 'Layers',
-  'Git': 'Code2',
-  'Arduino': 'Terminal',
-  'IoT Systems': 'Server',
-  'Web3': 'Code2',
-  'Blockchain': 'Database',
-  'Smart Contracts': 'Code2'
+  'VBA': 'Terminal',
+  'Financial Modeling': 'TrendingUp',
+  'Derivatives Pricing': 'TrendingUp',
+  'CVA Calculations': 'TrendingUp',
+  'Monte Carlo Simulations': 'TrendingUp',
+  'GARCH Models': 'TrendingUp',
+  'Risk Management': 'Star',
+  'Treasury Operations': 'Database',
+  'Financial Reporting': 'Database',
+  'Econometrics': 'TrendingUp',
+  'Portfolio Management': 'Star',
+  'Regulatory Compliance': 'Star',
+  'Client Relations': 'Users'
 };
 
 export const navigationItems = [
