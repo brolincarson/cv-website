@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from 'react';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   User,
@@ -502,13 +502,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full blur opacity-60"></div>
               <div className="relative w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full p-0.5">
                 {siteContent.personal.profileImage ? (
-                  <Image
+                  <img 
                     src={siteContent.personal.profileImage}
                     alt={siteContent.personal.name}
-                    width={32}
-                    height={32}
                     className="w-full h-full object-cover rounded-full"
-                    priority
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center">
@@ -597,13 +594,10 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-cyan-400 to-teal-400 rounded-full blur-lg opacity-60 animate-pulse"></div>
                   <div className="relative w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full p-1">
                     {siteContent.personal.profileImage ? (
-                      <Image
+                      <img 
                         src={siteContent.personal.profileImage}
                         alt={siteContent.personal.name}
-                        width={128}
-                        height={128}
                         className="w-full h-full object-cover rounded-full"
-                        priority
                       />
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center">
@@ -766,20 +760,21 @@ export default function Home() {
               >
                 <div className="w-20 h-20 mx-auto relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-cyan-400 to-teal-400 rounded-full blur-lg opacity-60"></div>
-                  {siteContent.personal.profileImage ? (
-                    <Image
-                      src={siteContent.personal.profileImage}
-                      alt={siteContent.personal.name}
-                      width={76}
-                      height={76}
-                      className="w-full h-full object-cover rounded-full block"
-                      priority
-                    />
-                  ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center">
-                      <User size={30} className="text-cyan-400" />
-                    </div>
-                  )}
+                  <div className="relative w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-full p-1 overflow-hidden">
+                    {siteContent.personal.profileImage ? (
+                      <img 
+                        src={siteContent.personal.profileImage}
+                        alt={siteContent.personal.name}
+                        className="w-full h-full object-cover rounded-full block"
+                        loading="eager"
+                        style={{ minHeight: '76px', minWidth: '76px' }}
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center">
+                        <User size={30} className="text-cyan-400" />
+                      </div>
+                    )}
+                  </div>
                 </div>
                 
                 <h1 className="text-lg sm:text-xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-1">
