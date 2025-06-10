@@ -1,235 +1,209 @@
 export const siteContent = {
   personal: {
-    name: "Stacy Ayako",
-    title: "Quantitative Finance Professional & Risk Management Specialist",
-    email: "ayakostacy@gmail.com",
-    phone: "+48 502 416 510",
-    location: "Poznan, Poland",
-    profileImage: "https://images.unsplash.com/photo-1494790108755-2616b612b048?w=400&h=400&fit=crop&crop=face",
-    bio: "Finance professional with a Master's in Quantitative Finance and comprehensive experience in client servicing, financial operations, and treasury functions. Possesses strong skills in derivatives pricing, CVA computation, and financial analysis, with practical expertise in SAP, Excel, and R. Proven ability to work cross-functionally to improve process efficiency and ensure accuracy in financial reporting. Adept in risk management, treasury processing, and supporting end-to-end finance functions. Currently serving as Team Lead at FIS Global, overseeing daily operations and managing complex client accounts while ensuring regulatory compliance. My expertise spans from Monte Carlo simulations and GARCH modeling to practical treasury operations and client relationship management. I bridge theoretical quantitative finance knowledge with real-world financial services applications, delivering measurable results in risk assessment, portfolio management, and operational efficiency.",
-    shortBio: "Finance professional with a Master's in Quantitative Finance and comprehensive experience in client servicing, financial operations, and treasury functions. Currently serving as Team Lead at FIS Global with expertise in derivatives pricing, risk management, and treasury operations.",
+    name: "Brolin Carson Osindi",
+    title: "Software Developer & Network Infrastructure Specialist",
+    email: "brolinosindi@gmail.com",
+    phone: "+48 793 919 629",
+    location: "Zoliborz, Warsaw, Poland",
+    profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    bio: "Results-driven software developer and network infrastructure specialist with a strong background in software development, manual testing, and IT support. Experienced in end-to-end software development lifecycle (SDLC), network design, and cloud computing. Passionate about building robust systems and fintech innovations. Currently pursuing a Master's in Management while working as a Manual Tester at Educatifu. My expertise spans from network configuration and security implementation to software testing and cloud infrastructure deployment. I bridge theoretical computer engineering knowledge with practical system design applications, delivering measurable results in network optimization, software quality assurance, and infrastructure automation. With CCNA certification and Azure fundamentals knowledge, I specialize in creating scalable, secure network architectures and optimizing software development processes.",
+    shortBio: "Results-driven software developer and network infrastructure specialist with expertise in SDLC, network design, and cloud computing. Currently working as a Manual Tester while pursuing Master's in Management, with CCNA certification and Azure fundamentals knowledge.",
     socialLinks: {
-      github: "https://github.com/stacyayako",
-      linkedin: "https://linkedin.com/in/stacyayako",
-      twitter: "https://twitter.com/stacyayako"
+      github: "https://github.com/brolinosindi",
+      linkedin: "https://linkedin.com/in/brolin-osindi",
+      twitter: "https://twitter.com/brolinosindi"
     }
   },
   skills: [
-    "SAP ERP", "Advanced Excel", "R Programming", "SPSS", "Python", "VBA", 
-    "Financial Modeling", "Derivatives Pricing", "CVA Calculations", "Monte Carlo Simulations", 
-    "GARCH Models", "Risk Management", "Treasury Operations", "Financial Reporting", 
-    "Econometrics", "Portfolio Management", "Regulatory Compliance", "Client Relations"
+    "Network Design", "Cisco CCNA", "Microsoft Azure", "Software Testing", "Linux Scripting", "Windows Server", 
+    "TCP/IP", "Firewalls", "VPNs", "Wireshark", "Cisco Packet Tracer", "Cloud Computing", 
+    "SDLC", "Manual Testing", "Network Security", "System Administration", "IT Support", "Database Scripting"
   ],
   projects: [
     {
       id: 1,
-      title: "Credit Valuation Adjustment (CVA) Analysis",
-      shortDescription: "Comprehensive CVA computation for FX Forwards and Credit Default Swaps.",
-      description: "Developed and implemented Credit Valuation Adjustment models for FX Forwards and Credit Default Swaps, incorporating counterparty credit risk into derivative pricing. Utilized advanced mathematical models and Monte Carlo simulations to assess credit exposure and potential losses.",
+      title: "Network Design and Configuration using Cisco Packet Tracer",
+      shortDescription: "Multi-VLAN network with inter-VLAN routing and security policies.",
+      description: "Designed and implemented a comprehensive multi-VLAN network infrastructure with inter-VLAN routing capabilities. Configured dynamic routing protocols (OSPF, EIGRP) for optimized network communication and implemented robust security policies including access control lists (ACLs) and port security measures.",
       status: "complete",
-      technologies: ["R", "Monte Carlo", "Financial Modeling", "Risk Management"],
-      github: "https://github.com/stacyayako",
+      technologies: ["Cisco Packet Tracer", "OSPF", "EIGRP", "VLANs", "ACLs"],
+      github: "https://github.com/brolinosindi",
       needsCollaboration: false
     },
     {
       id: 2,
-      title: "Monte Carlo Options Pricing Model",
-      shortDescription: "Advanced pricing model for lookback options using Monte Carlo simulations.",
-      description: "Built sophisticated Monte Carlo simulation framework for pricing lookback options, incorporating path-dependent features and stochastic volatility models. Developed fair value estimation techniques and sensitivity analysis tools.",
+      title: "Network Monitoring and Analysis using Wireshark",
+      shortDescription: "Comprehensive network traffic analysis and security threat identification.",
+      description: "Developed comprehensive network monitoring system using Wireshark for traffic analysis and security threat identification. Captured and analyzed network traffic to identify potential security threats and performance issues, diagnosed and resolved network bottlenecks through detailed packet capture interpretation.",
       status: "complete",
-      technologies: ["R", "Monte Carlo", "Options Pricing", "Statistical Modeling"],
-      github: "https://github.com/stacyayako",
+      technologies: ["Wireshark", "Network Analysis", "Security Monitoring", "Protocol Analysis"],
+      github: "https://github.com/brolinosindi",
       needsCollaboration: false
     },
     {
       id: 3,
-      title: "Portfolio Risk Management System",
-      shortDescription: "GARCH-based forecasting models for stock returns and VaR assessment.",
-      description: "Designed and implemented GARCH models for forecasting stock returns and market indices, with comprehensive Value-at-Risk (VaR) assessment capabilities. Integrated real-time risk monitoring and stress testing scenarios.",
+      title: "Azure Cloud: Virtual Machine Deployments",
+      shortDescription: "Cloud infrastructure deployment with security and web server configuration.",
+      description: "Designed and deployed scalable cloud infrastructure on Microsoft Azure including Ubuntu VMs running Nextcloud web servers with secured access using network security groups and bastion hosts. Set up Windows VMs with osTicket software, configuring comprehensive user roles, permissions, and SLAs for efficient IT service management.",
       status: "complete", 
-      technologies: ["R", "GARCH Models", "VaR", "Risk Analytics"],
-      github: "https://github.com/stacyayako",
+      technologies: ["Microsoft Azure", "Ubuntu", "Windows Server", "Nextcloud", "osTicket"],
+      github: "https://github.com/brolinosindi",
       needsCollaboration: false
     },
     {
       id: 4,
-      title: "Liquidity Risk Management Framework",
-      shortDescription: "Advanced liquidity scenario modeling and stress testing for derivative portfolios.",
-      description: "Developed comprehensive liquidity risk management system evaluating funding needs under stress conditions for derivative portfolios. Implemented scenario analysis and stress testing frameworks using financial data simulations.",
+      title: "Automated Testing Framework Development",
+      shortDescription: "Linux scripting automation for streamlined testing processes.",
+      description: "Developed automated testing framework using Linux scripting to streamline repetitive testing tasks and improve overall testing efficiency. Created comprehensive test documentation and reporting systems that contributed to faster issue resolution and improved development process communication.",
       status: "complete",
-      technologies: ["Financial Modeling", "Stress Testing", "Risk Management", "Derivatives"],
-      github: "https://github.com/stacyayako",
+      technologies: ["Linux Scripting", "Test Automation", "Documentation", "Process Optimization"],
+      github: "https://github.com/brolinosindi",
       needsCollaboration: false
     },
     {
       id: 5,
-      title: "Treasury Operations Optimization",
-      shortDescription: "Streamlined treasury payment flows and reconciliation processes at FIS Global.",
-      description: "Led optimization initiatives for treasury payment flows across multiple portfolios, implementing automated reconciliation processes and enhancing data accuracy protocols. Improved operational efficiency and reduced processing time by 30%.",
+      title: "Enterprise Network Security Implementation",
+      shortDescription: "Comprehensive security infrastructure with monitoring and patch management.",
+      description: "Implemented enterprise-level network security infrastructure including firewall configuration, VPN setup, and comprehensive monitoring systems. Collaborated on security patch deployment and system optimizations that enhanced overall network security and operational efficiency.",
       status: "complete",
-      technologies: ["SAP ERP", "Treasury Management", "Process Optimization", "Financial Operations"],
-      github: "https://github.com/stacyayako",
+      technologies: ["Network Security", "Firewalls", "VPN", "Security Patches", "System Monitoring"],
+      github: "https://github.com/brolinosindi",
       needsCollaboration: false
     },
     {
       id: 6,
-      title: "Regulatory Compliance Dashboard",
-      shortDescription: "Comprehensive compliance monitoring system for financial services operations.",
-      description: "Developed regulatory compliance monitoring dashboard for tracking adherence to financial services regulations, automated risk control assessments, and real-time compliance reporting for complex client accounts.",
+      title: "IT Infrastructure Optimization Project",
+      shortDescription: "System performance enhancement and disaster recovery implementation.",
+      description: "Led comprehensive IT infrastructure optimization project focusing on system performance enhancement, backup implementation, and disaster recovery preparedness. Supported data migration efforts during system upgrades ensuring data integrity and smooth operational transitions.",
       status: "ongoing",
-      technologies: ["Excel", "Financial Reporting", "Compliance", "Risk Controls"],
-      github: "https://github.com/stacyayako",
+      technologies: ["System Administration", "Backup Systems", "Data Migration", "Performance Optimization"],
+      github: "https://github.com/brolinosindi",
       needsCollaboration: false
     }
   ],
   blogPosts: [
     {
       id: 1,
-      title: "Advanced CVA Calculations in Modern Risk Management",
-      excerpt: "Deep dive into Credit Valuation Adjustment methodologies and practical implementation",
+      title: "Advanced Network Design with Cisco Technologies",
+      excerpt: "Deep dive into VLAN configuration and inter-VLAN routing best practices",
       date: "2024-12-10",
-      slug: "cva-calculations-risk-management"
+      slug: "advanced-network-design-cisco"
     },
     {
       id: 2,
-      title: "Monte Carlo Methods for Derivatives Pricing",
-      excerpt: "Comprehensive guide to implementing Monte Carlo simulations for complex option structures",
+      title: "Cloud Infrastructure Security on Azure",
+      excerpt: "Comprehensive guide to implementing secure cloud architectures",
       date: "2024-11-15", 
-      slug: "monte-carlo-derivatives-pricing"
+      slug: "cloud-infrastructure-security-azure"
     },
     {
       id: 3,
-      title: "GARCH Models in Portfolio Risk Assessment",
-      excerpt: "Practical applications of GARCH modeling for volatility forecasting and VaR calculations",
+      title: "Software Testing Automation with Linux Scripts",
+      excerpt: "Practical approaches to automating testing workflows and improving efficiency",
       date: "2024-10-20",
-      slug: "garch-models-portfolio-risk"
+      slug: "software-testing-automation-linux"
     }
   ]
 };
 
 export const experience = [
   {
-    title: "Senior Financial Services Account Associate",
-    company: "FIS Global",
-    period: "January 2025 - Present",
+    title: "Manual Tester",
+    company: "Educatifu Sp Z o.o.",
+    period: "February 2023 - Present",
+    location: "Warsaw, Poland",
+    shortSummary: "Leading quality assurance efforts and collaborating with development teams to optimize software applications.",
+    achievements: [
+      "Collaborated closely with developers and project managers to identify, communicate, and resolve defects, ensuring timely and effective fixes",
+      "Prepared detailed test reports and documented test cases for functional, regression, and usability testing phases, contributing to continuous improvement in the development process",
+      "Collaborated with developers to test and optimize software applications, improving system performance and reliability across multiple platforms",
+      "Automated repetitive testing tasks using basic Linux scripting, streamlining processes and increasing overall efficiency by 40%",
+      "Identified and resolved critical application issues through comprehensive testing, leading to improved functionality and user experience",
+      "Generated detailed test reports and documentation, contributing to more efficient communication and faster issue resolution"
+    ],
+    technologies: ["Manual Testing", "Linux Scripting", "Test Documentation", "Quality Assurance", "Software Testing"]
+  },
+  {
+    title: "Associate IS Analyst",
+    company: "Franklin Templeton Investments",
+    period: "June 2019 - August 2019",
     location: "Poznan, Poland",
-    shortSummary: "Team Lead overseeing daily operations, client account management, and regulatory compliance.",
+    shortSummary: "Provided technical support and infrastructure management for investment operations systems.",
     achievements: [
-      "Serve as Team Lead, overseeing daily operations, coordinating team efforts, and supporting performance management",
-      "Manage complex client accounts and financial transactions, ensuring adherence to regulatory compliance and internal risk controls",
-      "Lead onboarding and training initiatives for new hires, enhancing team productivity and integration",
-      "Handle escalated client queries, ensuring timely resolution and high customer satisfaction through effective communication",
-      "Drive operational efficiency by participating in cross-functional projects aimed at streamlining service delivery and back-office workflows"
+      "Provided technical support to end-users, troubleshooting and resolving hardware and software issues to ensure smooth operations",
+      "Supported the deployment and maintenance of key network infrastructure, leading to improved system stability and performance",
+      "Assisted in managing cloud infrastructure and performing system upgrades, optimizing cloud system configurations for better application performance",
+      "Collaborated with the IT team on security patches and system optimizations, enhancing overall network security and efficiency"
     ],
-    technologies: ["SAP ERP", "Financial Operations", "Risk Management", "Client Relations"]
+    technologies: ["Technical Support", "Network Infrastructure", "Cloud Management", "System Upgrades", "Security Patches"]
   },
   {
-    title: "Financial Services Account Associate II",
-    company: "FIS Global",
-    period: "February 2023 - December 2024",
-    location: "Poznan, Poland",
-    shortSummary: "Executed complex mutual fund transactions and maintained regulatory compliance standards.",
-    achievements: [
-      "Executed mutual fund transactions: liquidations, distributions, exchanges, and purchases",
-      "Supported daily operations through research, documentation, and internal communication",
-      "Maintained accuracy of client instructions and contributed to data integrity initiatives",
-      "Ensured client account compliance with regulatory and operational standards, identifying potential risk areas"
-    ],
-    technologies: ["Financial Operations", "Mutual Funds", "Regulatory Compliance", "Data Management"]
-  },
-  {
-    title: "Junior Finance Analyst - NAV Middle Office, Treasury",
-    company: "State Street Bank International",
-    period: "October 2022 - March 2023",
-    location: "Gdansk, Poland",
-    shortSummary: "Processed treasury operations and supported fund transfer reconciliation across portfolios.",
-    achievements: [
-      "Processed investor wires and supported treasury payment flows across portfolios",
-      "Ensured data accuracy in fund transfers and reconciled incoming financial transactions",
-      "Communicated task completion to stakeholders and resolved ad-hoc treasury and finance requests",
-      "Contributed to operational efficiency improvements in middle office processes"
-    ],
-    technologies: ["Treasury Operations", "Fund Transfers", "Financial Reconciliation", "Middle Office"]
-  },
-  {
-    title: "Finance Intern - Accounts Payable",
-    company: "Kenya Revenue Authority",
-    period: "January 2020 - April 2020",
+    title: "IT Intern",
+    company: "Sanergy",
+    period: "June 2016 - July 2016",
     location: "Nairobi, Kenya",
-    shortSummary: "Managed SAP-based payment processing and maintained financial documentation accuracy.",
+    shortSummary: "Supported IT infrastructure operations and contributed to system maintenance initiatives.",
     achievements: [
-      "Processed payments and maintained SAP-led payment records for internal and external suppliers",
-      "Tracked treasury flows across multiple departments, processed invoices, and imprest entries",
-      "Ensured accuracy in medical reimbursements and project finance documentation",
-      "Supported accounts payable operations and improved process documentation"
+      "Provided ongoing support for IT infrastructure, reducing downtime through timely troubleshooting and issue resolution",
+      "Assisted in data migration efforts during system upgrades, ensuring data integrity and smooth transitions",
+      "Contributed to system maintenance, including backups and updates, improving disaster recovery preparedness",
+      "Supported team-based IT projects that enhanced system performance and user experience"
     ],
-    technologies: ["SAP ERP", "Accounts Payable", "Financial Documentation", "Treasury Management"]
+    technologies: ["IT Support", "Data Migration", "System Maintenance", "Backup Systems", "Infrastructure Support"]
   }
 ];
 
 export const education = [
   {
-    degree: "Master of Science in Quantitative Finance",
-    institution: "Poznan University of Economics and Business", 
-    period: "September 2022 - July 2024",
-    gpa: "Distinction",
-    focus: "Derivatives Pricing, Econometrics, Financial Modelling, Corporate Finance, Risk Analysis, R, VBA"
+    degree: "Master in Management",
+    institution: "Warsaw University of Business and Psychology", 
+    period: "March 2025",
+    gpa: "In Progress",
+    focus: "Management, Leadership, Business Psychology, Entrepreneurship, Finance, Accounting, and Ethics"
   },
   {
-    degree: "Bachelor of Science in Commerce",
-    institution: "Strathmore University", 
-    period: "September 2017 - September 2021",
-    gpa: "Second Class Upper Division",
-    focus: "Major in Accounting, Minor in Finance"
+    degree: "Bachelor in Computer Engineering and Mechatronics",
+    institution: "University of Economy", 
+    period: "March 2022",
+    gpa: "Completed",
+    focus: "Computer Networking, Programming, IT support, Cloud Computing, Database scripting, and Web Design"
   }
 ];
 
 export const certifications = [
   {
-    name: "CEFR English C1 Level",
-    issuer: "Poznan University of Economics and Business",
+    name: "Cisco Certified Network Associate (CCNA)",
+    issuer: "Cisco Systems",
     year: "2024",
-    id: "CEFR-C1-2024"
+    id: "CCNA-2024"
   },
   {
-    name: "Strategic Thinking",
-    issuer: "LinkedIn Learning",
+    name: "Microsoft Azure Fundamentals (AZ-900)",
+    issuer: "Microsoft",
     year: "2024",
-    id: "ST-LL-2024"
-  },
-  {
-    name: "Excel: Power Pivot for Beginners",
-    issuer: "LinkedIn Learning",
-    year: "2023",
-    id: "PP-LL-2023"
-  },
-  {
-    name: "ACCA P1 Level",
-    issuer: "Strathmore University",
-    year: "2021",
-    id: "ACCA-P1-2021"
+    id: "AZ-900-2024"
   }
 ];
 
 export const skillIcons = {
-  'SAP ERP': 'Database',
-  'Advanced Excel': 'Database',
-  'R Programming': 'Terminal',
-  'SPSS': 'Terminal',
-  'Python': 'Terminal',
-  'VBA': 'Terminal',
-  'Financial Modeling': 'TrendingUp',
-  'Derivatives Pricing': 'TrendingUp',
-  'CVA Calculations': 'TrendingUp',
-  'Monte Carlo Simulations': 'TrendingUp',
-  'GARCH Models': 'TrendingUp',
-  'Risk Management': 'Star',
-  'Treasury Operations': 'Database',
-  'Financial Reporting': 'Database',
-  'Econometrics': 'TrendingUp',
-  'Portfolio Management': 'Star',
-  'Regulatory Compliance': 'Star',
-  'Client Relations': 'Users'
+  'Network Design': 'Server',
+  'Cisco CCNA': 'Server',
+  'Microsoft Azure': 'Database',
+  'Software Testing': 'Terminal',
+  'Linux Scripting': 'Terminal',
+  'Windows Server': 'Database',
+  'TCP/IP': 'Server',
+  'Firewalls': 'Star',
+  'VPNs': 'Star',
+  'Wireshark': 'Terminal',
+  'Cisco Packet Tracer': 'Terminal',
+  'Cloud Computing': 'Database',
+  'SDLC': 'TrendingUp',
+  'Manual Testing': 'TrendingUp',
+  'Network Security': 'Star',
+  'System Administration': 'Server',
+  'IT Support': 'Users',
+  'Database Scripting': 'Database'
 };
 
 export const navigationItems = [
